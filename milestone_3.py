@@ -17,9 +17,9 @@ def ask_for_input():
         guess = input('Enter a single letter: ')
         if len(guess) == 1 and guess.isalpha():
             print('Valid guess')
-            if check_guess(guess):
-                break
         else:
             print('Invalid letter. Please, enter a single alphabetical character.')
+    check_guess(guess)
+
 
 ask_for_input()
